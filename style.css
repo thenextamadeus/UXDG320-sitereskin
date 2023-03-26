@@ -1,0 +1,254 @@
+body {
+    
+    background-image: url(images/Stars.png);
+    background-repeat: repeat-y;
+    background-color: #000000;
+    margin: 0%;
+    
+    width: 100vw;
+    height: 150vh;
+
+}
+
+/* ID Name */
+.container {
+    width: auto;
+/* If this was a class, name would be .container */
+ /* height: 1000px; */
+ /* background-color: blue; */
+ flex-direction: column;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
+/* font-family: 'Martian Mono', monospace;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Unbounded', cursive; */
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    
+}
+
+
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Martian Mono', sans-serif;
+    color: white;
+}
+
+
+
+/* ------- HEADER ------ */ /* ------- HEADER ------ */ /* ------- HEADER ------ */ /* ------- HEADER ------ */ /* ------- HEADER ------ */ /* ------- HEADER ------ */
+
+.header {
+    /* background-color: aqua; */
+    font-weight: 400;
+    position: relative;
+    font-size: 18px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+}
+
+.navItem {
+flex-shrink: 1;
+
+font-size: 1em;
+}
+
+.navLink {
+    color: #f7395f;
+    text-decoration: none;
+}
+
+/* selecting with base.classItem.state */
+/* can do div.navItem.hover as a selector */
+a.navLink:hover{
+    color: #504c46;
+}
+
+/* ------- FEATURE ------ */ /* ------- FEATURE ------ */ /* ------- FEATURE ------ */ /* ------- FEATURE ------ */ /* ------- FEATURE ------ */
+
+#feature {
+    /* background-color: beige; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.wormholeDiv {
+    overflow: hidden;
+    position: absolute;
+    border-radius: 200px;
+    width: 370px;
+    height: 370px;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -185px;
+    background-image: url(images/Wormhole.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    scale: 2;
+    background-position: center;
+    /* ACTIVATING THE SPINNING ANIMATION */
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+/* WORMHOLE ANIMATION */
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+    
+}
+
+
+.heroH1 {
+    text-align: center;
+    width: 100%;
+    font-size: 3em; 
+    background-color: black;
+}
+
+
+.featureText {
+    position: relative;
+    background-color: #f7395f;
+    font-size: 15px;
+    max-width: 370px;
+}
+
+.featureButton {
+    width: 168px;
+    position: relative;
+    top: 65px;
+    left: 650px;
+    
+}
+
+.learnMore {
+    position: relative;
+    top: 60px;
+    left: 600px;
+}
+
+
+/* ------- LOWER ------ */ /* ------- LOWER ------ */ /* ------- LOWER ------ */ /* ------- LOWER ------ */ /* ------- LOWER ------ */ /* ------- LOWER ------ */
+
+#lower{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    gap: 5%;;
+width: 100%;
+height: auto;
+justify-content: center;
+color: #f3e7d3;
+}
+
+
+/* TYPOGRAPHY */
+
+.cardText {
+    line-height: 1.3em;
+    margin: 0px;
+    color: #f3e7d3;
+    font-size: 20px;
+    width: auto;
+}
+
+
+/* CARDS */
+
+.cardDiv {
+    /* background-color: orange; */
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 200px;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.cardImageDiv {
+    display: flex;
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 0%;
+    scale: 1;
+    transition-property: margin-top scale;
+    transition-duration: 4s;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    object-fit: cover;
+}
+
+/* IMAGE IDS */ /* IMAGE IDS */ /* IMAGE IDS */ /* IMAGE IDS */ /* IMAGE IDS */ /* IMAGE IDS */ /* IMAGE IDS */
+
+
+.cardButton {
+    /* background-color: yellow; */
+    position: relative;
+    margin-bottom: 0px;
+    border: white;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardButton:hover {
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+
+.cardLink {
+    display: flex;
+    text-decoration: none;
+}
+
+.cardLink:hover {
+    text-decoration: none;
+}
+
+
+/* TABLET */ /* TABLET */ /* TABLET *//* TABLET *//* TABLET *//* TABLET */ /* TABLET */ /* TABLET */ /* TABLET */ /* TABLET */ 
+@media screen and (max-device-width: 768px) {
+    .heroH1 {
+        font-size: 2em;
+    }
+    #lower {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+    
+}
+
+
+/* PHONE */ /* PHONE */ /* PHONE *//* PHONE */ /* PHONE */ /* PHONE */ /* PHONE */ /* PHONE */ /* PHONE */
+@media screen and (max-device-width: 480px) {
+    
+    
+}

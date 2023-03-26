@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;500&family=Press+Start+2P&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- 
+        ID can only be used once. This is what I used to anchor before. Class used 
+        for anything you need to be uniform across CSS properties 
+    -->
+
+        <div class="header">
+            <p class="navItem">WHAT IS A WORMHOLE</p>
+            <p class="navItem">WHO SHOULD GO IN NEXT?</p>
+        </div>
+
+        <div id="feature">
+            <h1 class="heroH1">SEND THEM INTO THE WORMHOLE!</h1>
+            <p class="featureText">CLICK BELOW</p>
+            <div class="wormholeDiv"></div>
+        </div>
+
+        <div id="lower">
+
+
+            <div class="cardDiv">
+                <div class="cardImageDiv">
+                    <img class="cardImg" src="images/rock.jpg" alt="">
+                </div>
+                <div class="cardButton" onmousedown="sentOut(0)">
+                    <p class="cardText">THE ROCK</p>
+                </div>
+            </div>
+
+
+            <div class="cardDiv">
+                <div class="cardImageDiv">
+                    <img class="cardImg" src="images/northCarolina.jpg">
+                </div>
+                <div class="cardButton" onmousedown="sentOut(1)">
+                    <p class="cardText">NC</p>
+                </div>
+            </div>
+
+
+            <div class="cardDiv">
+                <div class="cardImageDiv">
+                    <img class="cardImg" src="images/obama.jpg" alt="">
+                </div>
+                <div class="cardButton" onmousedown="sentOut(2)">
+                    <p class="cardText">OBAMA</p>
+                </div>
+            </div>
+
+            <div class="cardDiv">
+                <div class="cardImageDiv">
+                    <img class="cardImg" src="images/niki.jpg">
+                </div>
+                <div class="cardButton" onmousedown="sentOut(3)">
+                    <p class="cardText">NIKI</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
